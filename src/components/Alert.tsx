@@ -7,7 +7,7 @@ interface Props {
 
 const Alert = (props: Props) => {
   return (
-    <div className="alert alert-primary alert-dismissible" role="alert">
+    <div className="alert alert-warning alert-dismissible" role="alert">
       <strong>{props.message}</strong>
       <button
         type="button"

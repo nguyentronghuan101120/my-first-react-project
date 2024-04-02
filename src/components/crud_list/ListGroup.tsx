@@ -5,6 +5,7 @@ interface Props {
   heading: string;
 
   onSelectItem: (item: string) => void;
+  onClearItem: (index: number) => void;
 }
 
 function ListGroup(props: Props) {
@@ -33,6 +34,17 @@ function ListGroup(props: Props) {
             }}
           >
             {item}
+
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+              onClick={() => {
+                props.onClearItem(index);
+              }}
+              style={{ float: "right" }}
+            ></button>
           </li>
         ))}
       </ul>
