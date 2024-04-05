@@ -1,16 +1,27 @@
 import { ChangeEvent, SyntheticEvent, useState } from "react";
-import Alert from "./components/Alert";
+import Alert from "./components/crud_list/Alert";
 import Button from "./components/crud_list/Button";
 import ListGroup from "./components/crud_list/ListGroup";
 import TextField from "./components/crud_list/TextField";
-import "./App.css";
 import CrudListIndex from "./components/crud_list/CrudListIndex";
+import ColorPickerIndex from "./components/color_picker/ColorPickerIndex";
+import TodoListIndex from "./components/todo_list/TodoListIndex";
+import TicTacToeApp from "./components/tic_tac_toe_app/TicTacToeApp";
+import ClockApp from "./components/clock_app/ClockApp";
+import UseContextApp from "./components/use_context_app/UseContextApp";
+import UseRefApp from "./components/use_ref_app/UseRefApp";
+import StopWatchApp from "./components/stop_watch_app/StopWatchApp";
+
+function App() {
+  return <StopWatchApp></StopWatchApp>;
+}
+
 /// The app with a list view, the text field and the button add,
 /// when you input to the field and press add button, the value will add to this list
 
-function App() {
-  return <CrudListIndex></CrudListIndex>;
-}
+// function App() {
+//   return <CrudListIndex></CrudListIndex>;
+// }
 
 /// The app with a button, when you clicked this button, the dialog will show
 

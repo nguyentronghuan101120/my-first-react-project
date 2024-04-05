@@ -2,7 +2,7 @@ import React, { ChangeEvent, useState } from "react";
 import ListGroup from "./ListGroup";
 import TextField from "./TextField";
 import Button from "./Button";
-import Alert from "../Alert";
+import Alert from "./Alert";
 
 const CrudListIndex = () => {
   const [listString, setListString] = useState<string[]>([]);
